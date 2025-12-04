@@ -4,15 +4,19 @@
 :- use_module(library(http/http_cors)).
 :- use_module(library(http/http_files)).
 
-:- http_handler(root(.), http_reply_file('needs.html', []), [priority(10)]).
-:- http_handler(root('needs.html'), http_reply_file('needs.html', []), [priority(10)]).
-:- http_handler(root('needs.css'), http_reply_file('needs.css', []), [priority(20)]).
-:- http_handler(root('needs.js'), http_reply_file('needs.js', []), [priority(20)]).
+:- http_handler(root(.), http_reply_file('home/index.html', []), [priority(10)]).
+:- http_handler(root('index.html'), http_reply_file('home/index.html', []), [priority(10)]).
+:- http_handler(root('about.html'), http_reply_file('about/about.html', []), [priority(10)]).
+:- http_handler(root('needs.html'), http_reply_file('needs/needs.html', []), [priority(10)]).
+:- http_handler(root('needs.css'), http_reply_file('needs/needs.css', []), [priority(20)]).
+:- http_handler(root('needs.js'), http_reply_file('needs/needs.js', []), [priority(20)]).
+:- http_handler(root('about.css'), http_reply_file('about/about.css', []), [priority(20)]).
+:- http_handler(root('styles.css'), http_reply_file('home/styles.css', []), [priority(20)]).
 :- http_handler(root(api/test), handle_test, []).
 :- http_handler(root(api/recommendations), handle_recommendations, [methods([post, options])]).
 :- http_handler(root(api/places), handle_all_places, [methods([get, options])]).
 
-% Places
+% ...existing places data...
 place('paoay-church', 'Paoay Church', ['shaded', 'minimal-walking', 'wheelchair-friendly', 'step-free-access']).
 place('sinking-bell-tower', 'Sinking Bell Tower', ['minimal-walking', 'shaded']).
 place('malacanang-north', 'Malacanang of the North', ['wheelchair-friendly', 'minimal-walking', 'shaded', 'step-free-access', 'accessible-restrooms', 'handrails']).
@@ -44,12 +48,11 @@ place('hannahs-beach', 'Hannah\'s Beach Resort', ['wheelchair-friendly', 'minima
 place('laoag-sand-dunes', 'Laoag Sand Dunes (edge viewpoint)', ['minimal-walking', 'shaded']).
 place('suso-beach', 'Suso Beach', ['minimal-walking', 'shaded']).
 
-% Convert needs to atoms
+% ...existing helper predicates...
 to_atom(X, X) :- atom(X), !.
 to_atom(X, A) :- string(X), !, atom_string(A, X).
 to_atom(X, X).
 
-% Find recommendations - ONLY complete matches
 find_recommendations(NeedsIn, Results) :-
     maplist(to_atom, NeedsIn, Needs),
     length(Needs, RequiredMatches),
@@ -64,21 +67,18 @@ find_recommendations(NeedsIn, Results) :-
     ),
     sort(4, @>=, Results, _).
 
-% Count matches
 count_matches([], _, 0).
 count_matches([H|T], Tags, N) :-
     count_matches(T, Tags, N1),
     (member(H, Tags) -> N is N1 + 1 ; N = N1).
 
-% Get all places
 get_all_places(Places) :-
     findall(place_result(ID, Name, Tags, 0), place(ID, Name, Tags), Places).
 
-% Test handler
+% ...existing handlers...
 handle_test(_) :-
     reply_json(json([status='ok', message='Working!', places=30])).
 
-% Recommendations handler
 handle_recommendations(Req) :-
     cors_enable(Req, [methods([post, options])]),
     (   memberchk(method(options), Req)
@@ -91,11 +91,9 @@ handle_recommendations(Req) :-
         reply_json(json([success=true, count=C, needs=Needs, recommendations=RecJson]))
     ).
 
-% Convert place result to JSON
 place_to_json(place_result(ID, Name, Tags, Matches), 
               json([id=ID, name=Name, tags=Tags, matches=Matches])).
 
-% All places handler
 handle_all_places(Req) :-
     cors_enable(Req, [methods([get, options])]),
     (   memberchk(method(options), Req)
@@ -106,7 +104,6 @@ handle_all_places(Req) :-
         reply_json(json([success=true, count=C, places=PlacesJson]))
     ).
 
-% Start server
 start :-
     http_server(http_dispatch, [port(8080)]),
     format('~n====================================~n'),
