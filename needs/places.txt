@@ -1,0 +1,266 @@
+[
+  {
+    "name": "Paoay Church",
+    "tags": ["shaded", "minimal-walking", "wheelchair-friendly", "quiet-space"]
+  },
+  {
+    "name": "Sinking Bell Tower",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Malacanang of the North",
+    "tags": ["wheelchair-friendly", "minimal-walking", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Bangui Windmills",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Museo Ilocos Norte",
+    "tags": ["wheelchair-friendly", "minimal-walking", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Laoag City Hall Area",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Currimao Lighthouse",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Paraiso ni Anton",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Saud Beach",
+    "tags": ["wheelchair-friendly", "minimal-walking", "shaded"]
+  },
+  {
+    "name": "Pagudpud Tourist Rest Area",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Laoag Cathedral",
+    "tags": ["minimal-walking", "shaded", "quiet-space"]
+  },
+  {
+    "name": "St. William's Cathedral Area",
+    "tags": ["wheelchair-friendly", "minimal-walking", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Paoay Lake Viewpoint",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Badoc Gateway",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Pasuquin Salt Farms Viewpoint",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Blue Lagoon Pagudpud",
+    "tags": ["wheelchair-friendly", "minimal-walking", "shaded"]
+  },
+  {
+    "name": "Casa Consuelo Resort",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Nueva Era Eco Park",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Juan Luna Shrine",
+    "tags": ["minimal-walking", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Fort Ilocandia",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Patapat Viaduct (viewpoint)",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "DMMSU Glass Garden",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Fantasy World Indoor Playground",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Batac Riverside Park",
+    "tags": ["shaded", "minimal-walking"]
+  },
+  {
+    "name": "Marcos Museum and Mausoleum",
+    "tags": ["wheelchair-friendly", "minimal-walking", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Ilocos Norte Capitol Grounds",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Baluarte ni Chavit (nearby access)",
+    "tags": ["wheelchair-friendly", "shaded"]
+  },
+  {
+    "name": "Hannah's Beach Resort",
+    "tags": ["wheelchair-friendly", "minimal-walking", "shaded"]
+  },
+  {
+    "name": "Laoag Sand Dunes (edge viewpoint)",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Suso Beach",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Cape Bojeador Lighthouse",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "La Paz Sand Dunes (viewing area)",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Paoay Sand Dunes (viewing and parking area)",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Ilocos Norte Botanical Garden",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Bonsai Garden at Capitol",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Pinili South Triage Center Park",
+    "tags": ["shaded", "minimal-walking"]
+  },
+  {
+    "name": "Rio Grande de Laoag River Resort",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Suba Paoay Lakeside",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Bacarra Church Plaza",
+    "tags": ["wheelchair-friendly", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Sta. Maria Eco-Tourism Park",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Balay Dingras Museum",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking", "quiet-space"]
+  },
+  {
+    "name": "Burgos Lighthouse Museum",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking", "quiet-space"]
+  },
+  {
+    "name": "Taoid Museum",
+    "tags": ["minimal-walking", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Padre Burgos Museum",
+    "tags": ["wheelchair-friendly", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Abolition of Tobacco Monopoly Monument",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "La Milagrosa Cove and Chapel",
+    "tags": ["shaded", "minimal-walking", "quiet-space"]
+  },
+  {
+    "name": "Dingras Church Plaza",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking", "quiet-space"]
+  },
+  {
+    "name": "Bacarra Bell Tower Base",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Sinait Church Grounds",
+    "tags": ["wheelchair-friendly", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Pagudpud Boulevard",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Laoag People's Park",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Batac Church Courtyard",
+    "tags": ["shaded", "minimal-walking", "quiet-space"]
+  },
+  {
+    "name": "Paoay Sports Complex Area",
+    "tags": ["wheelchair-friendly", "shaded"]
+  },
+  {
+    "name": "Bangui Beachfront Path",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Currimao Port Viewing Deck",
+    "tags": ["wheelchair-friendly", "shaded"]
+  },
+  {
+    "name": "Pasuquin Church Plaza",
+    "tags": ["minimal-walking", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Badoc Church Forecourt",
+    "tags": ["wheelchair-friendly", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Nueva Era Town Plaza",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Pinili Municipal Park",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  },
+  {
+    "name": "Sarrat Church Grounds",
+    "tags": ["shaded", "minimal-walking", "quiet-space"]
+  },
+  {
+    "name": "Magsingal Church Plaza",
+    "tags": ["wheelchair-friendly", "shaded", "quiet-space"]
+  },
+  {
+    "name": "La Paz Church Area",
+    "tags": ["minimal-walking", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Santa Catalina Chapel Grounds",
+    "tags": ["wheelchair-friendly", "shaded", "quiet-space"]
+  },
+  {
+    "name": "Solsona Town Square",
+    "tags": ["minimal-walking", "shaded"]
+  },
+  {
+    "name": "Banna Riverside View",
+    "tags": ["shaded", "minimal-walking"]
+  },
+  {
+    "name": "Pudtol Municipal Park",
+    "tags": ["wheelchair-friendly", "shaded", "minimal-walking"]
+  }
+]
