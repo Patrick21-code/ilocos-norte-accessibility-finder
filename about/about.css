@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -73,10 +74,11 @@ body {
 /* About Section */
 .about {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 4rem 8%;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 15px 70px 0 70px;
     min-height: calc(100vh - 100px);
     animation: fadeInUp 1s ease-out 0.3s both;
@@ -93,68 +95,24 @@ body {
     }
 }
 
-.about-info {
-    flex: 1;
-    max-width: 600px;
-}
-
-.about-info p {
+.about p {
     color: black;
-    font-size: 1.25rem;
+    font-size: 2rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     text-align: justify;
+    max-width: 1200px;
 }
 
-.about-info p:last-child {
+.about p:last-child {
     margin-bottom: 0;
-}
-
-.about-logo {
-    flex: 0 0 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeInRight 1s ease-out 0.6s both;
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.about-logo img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
-    transition: transform 0.3s ease;
-}
-
-.about-logo img:hover {
-    transform: scale(1.05);
 }
 
 /* Responsive Design */
 @media (max-width: 968px) {
     .about {
-        flex-direction: column;
         padding: 3rem 5%;
-        gap: 3rem;
-    }
-
-    .about-logo {
-        flex: 0 0 300px;
-    }
-
-    .about-logo img {
-        max-width: 300px;
+        gap: 2rem;
     }
 }
 
@@ -177,19 +135,12 @@ body {
 
     .about {
         padding: 2rem 5%;
-        gap: 2rem;
+        gap: 1.5rem;
+        margin: 15px 20px 0 20px;
     }
 
-    .about-info p {
-        font-size: 1rem;
-    }
-
-    .about-logo {
-        flex: 0 0 250px;
-    }
-
-    .about-logo img {
-        max-width: 250px;
+    .about p {
+        font-size: 1.2rem;
     }
 }
 
@@ -198,16 +149,12 @@ body {
         font-size: 1rem;
     }
 
-    .about-info p {
+    .about {
+        margin: 10px 15px 0 15px;
+    }
+
+    .about p {
         font-size: 0.95rem;
         line-height: 1.7;
-    }
-
-    .about-logo {
-        flex: 0 0 200px;
-    }
-
-    .about-logo img {
-        max-width: 200px;
     }
 }

@@ -12,6 +12,7 @@
 :- http_handler(root('needs.js'), http_reply_file('needs/needs.js', []), [priority(20)]).
 :- http_handler(root('about.css'), http_reply_file('about/about.css', []), [priority(20)]).
 :- http_handler(root('styles.css'), http_reply_file('home/styles.css', []), [priority(20)]).
+:- http_handler(root('iimages'), http_reply_from_files('iimages', []), [prefix]).
 :- http_handler(root(api/test), handle_test, []).
 :- http_handler(root(api/recommendations), handle_recommendations, [methods([post, options])]).
 :- http_handler(root(api/places), handle_all_places, [methods([get, options])]).
@@ -25,10 +26,9 @@ place('museo-ilocos', 'Museo Ilocos Norte', ['wheelchair-friendly', 'minimal-wal
 place('laoag-city-hall', 'Laoag City Hall Area', ['minimal-walking', 'shaded', 'wheelchair-friendly', 'step-free-access', 'accessible-restrooms', 'handrails']).
 place('currimao-lighthouse', 'Currimao Lighthouse', ['minimal-walking', 'shaded']).
 place('paraiso-ni-anton', 'Paraiso ni Anton', ['minimal-walking', 'shaded']).
-place('saud-beach', 'Saud Beach', ['wheelchair-friendly', 'minimal-walking', 'shaded', 'step-free-access']).
+place('saud-beach', 'Saud Beach', ['minimal-walking', 'shaded', 'step-free-access']).
 place('pagudpud-rest-area', 'Pagudpud Tourist Rest Area', ['wheelchair-friendly', 'shaded', 'minimal-walking', 'step-free-access', 'accessible-restrooms']).
 place('laoag-cathedral', 'Laoag Cathedral', ['minimal-walking', 'shaded', 'wheelchair-friendly', 'step-free-access']).
-place('st-williams-cathedral', 'St. William\'s Cathedral Area', ['wheelchair-friendly', 'minimal-walking', 'shaded', 'step-free-access']).
 place('paoay-lake-viewpoint', 'Paoay Lake Viewpoint', ['minimal-walking', 'shaded']).
 place('badoc-gateway', 'Badoc Gateway', ['wheelchair-friendly', 'shaded', 'minimal-walking', 'step-free-access']).
 place('pasuquin-salt-farms', 'Pasuquin Salt Farms Viewpoint', ['minimal-walking', 'shaded']).
@@ -38,12 +38,10 @@ place('nueva-era-eco-park', 'Nueva Era Eco Park', ['wheelchair-friendly', 'shade
 place('juan-luna-shrine', 'Juan Luna Shrine', ['minimal-walking', 'shaded']).
 place('fort-ilocandia', 'Fort Ilocandia', ['wheelchair-friendly', 'shaded', 'minimal-walking', 'step-free-access', 'accessible-restrooms']).
 place('patapat-viaduct', 'Patapat Viaduct (viewpoint)', ['minimal-walking', 'shaded']).
-place('dmmsu-glass-garden', 'DMMSU Glass Garden', ['wheelchair-friendly', 'shaded', 'minimal-walking', 'step-free-access', 'accessible-restrooms']).
 place('fantasy-world', 'Fantasy World Indoor Playground', ['wheelchair-friendly', 'shaded', 'minimal-walking', 'step-free-access', 'accessible-restrooms']).
 place('batac-riverside', 'Batac Riverside Park', ['shaded', 'minimal-walking']).
 place('marcos-museum', 'Marcos Museum and Mausoleum', ['wheelchair-friendly', 'minimal-walking', 'shaded', 'quiet-space', 'braille-paths', 'step-free-access', 'accessible-restrooms', 'handrails']).
 place('capitol-grounds', 'Ilocos Norte Capitol Grounds', ['minimal-walking', 'shaded', 'wheelchair-friendly', 'step-free-access', 'accessible-restrooms']).
-place('baluarte-chavit', 'Baluarte ni Chavit (nearby access)', ['wheelchair-friendly', 'shaded', 'step-free-access']).
 place('hannahs-beach', 'Hannah\'s Beach Resort', ['wheelchair-friendly', 'minimal-walking', 'shaded', 'step-free-access', 'accessible-restrooms']).
 place('laoag-sand-dunes', 'Laoag Sand Dunes (edge viewpoint)', ['minimal-walking', 'shaded']).
 place('suso-beach', 'Suso Beach', ['minimal-walking', 'shaded']).
